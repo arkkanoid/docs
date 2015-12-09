@@ -45,7 +45,7 @@ Since each machine in your cluster is going to have to pull images, cloud-config
 ```yaml
 #cloud-config
 write_files:
-    - path: /home/core/.dockercfg
+    - path: /home/core/.docker/config.json
       owner: core:core
       permissions: '0644'
       content: |
